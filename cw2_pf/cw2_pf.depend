@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1616446459 source:d:\cw2_pf\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+

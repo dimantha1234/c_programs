@@ -1,0 +1,3 @@
+Sam   Math    85
+Sam   physics    95
+Sam   chemistry    76
