@@ -1,32 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-void input();
-void process(int);
-int fine;
-
-int main()
+main()
 {
-    input();
-    printf("The total fine is:\t\t%d",fine);
-    return 0;
-}
-void input()
-{
-    int x[10],i;
-    for(i=1;i<=10;i++)
+    char name[20],table[3][4];
+    //i used gets() and puts() functions for the first time
+    puts("what is your name");
+    gets(name);
+    int i,j;
+    //i tried out to convey a msg using double arrays
+    for(i=0;i<3;i++)
     {
-        printf("plz enter the speed of the vehicle:\t\t");
-        scanf("%d",&x[i]);
+        for(j=0;j<4;j++)
+        {
+            printf("Enter a letter to covey a msg:");
+            scanf("%s",&table[i][j]);
+        }
+        printf("\n");
     }
-    process(x);
-}
-void process(int y[])
-{
-    int i;
-    for(i=1;i<=10;i++)
+    for(i=0;i<3;i++)
     {
-        if(y[i]>100)
-            fine+=500;
-
+        for(j=0;j<4;j++)
+        {
+            printf("%c\t",table[i][j]);
+        }
+        printf("\n");
     }
+
 }
