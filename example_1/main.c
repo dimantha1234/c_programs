@@ -3,12 +3,7 @@
 
 main()
 {
-   int x=1;
-   do
-   {
-    printf("%d",&x);
-    x+=2;
-    }
-    while (x<=50);
+  char str;
+  puts("hi");
 
 }
